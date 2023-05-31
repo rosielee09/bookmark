@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark App</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Open Modal -->
+    <h1 id="show-modal">Add Bookmark</h1>
+    <!-- Bookmarks -->
+    <div class="container" id="bookmarks-container">
+      <div class="item">
+        <i
+          class="fa-solid fa-xmark"
+          id="delete-bookmark"
+          title="Delete Bookmark"
+        ></i>
+        <div class="name">
+          <img
+            src="https://s2.googleusercontent.com/s2/favicons?domain=www.heropatterns.com/"
+            alt="Favicon"
+          />
+          <a href="https://heropatterns.com/" target="_blank">Hero Patterns</a>
+        </div>
+      </div>
+      <div class="item">
+        <i
+          class="fa-solid fa-xmark"
+          id="delete-bookmark"
+          title="Delete Bookmark"
+        ></i>
+        <div class="name">
+          <img
+            src="https://s2.googleusercontent.com/s2/favicons?domain=www.fontawesome.com/"
+            alt="Favicon"
+          />
+          <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
+        </div>
+      </div>
+      <div class="item">
+        <i
+          class="fa-solid fa-xmark"
+          id="delete-bookmark"
+          title="Delete Bookmark"
+        ></i>
+        <div class="name">
+          <img
+            src="https://s2.googleusercontent.com/s2/favicons?domain=www.heropatterns.com/"
+            alt="Favicon"
+          />
+          <a href="https://heropatterns.com/" target="_blank">Hero Patterns</a>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+        <div class="modal">
+          <i class="fa-solid fa-xmark close-icon " id="close-modal"></i>
+            <div class="modal-header">
+                <h3>Add Bookmark</h3>
+            </div>  
+            <div class="modal-content">
+                <form id="bookmark-form">
+                    <!-- website Name -->
+                    <div class="form-group">
+                        <label for="website-name" class="form-label">Website Name</label>
+                        <input type="text" class="form-input" id="website-name">
+                    </div>
+                    
+                     <!-- website URL -->
+                    <div class="form-group">
+                        <label for="website-url" class="form-label">Website URL</label>
+                        <input type="text" class="form-input" id="website-URL">
+                    </div>
+                    <button type="submit">Save</button>
+                </form>
+            </div>           
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/7f35c0b706.js" crossorigin="anonymous"></script>
+  </body>
+</html>
